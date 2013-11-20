@@ -1,8 +1,8 @@
 # Bundler tasks
 require 'bundler/capistrano'
 
-set :application, "roofing"
-set :repository,  "git@github.com:Agatov/roofing.git"
+set :application, "montale"
+set :repository,  "git@github.com:Agatov/montale.git"
 
 set :scm, :git
 
@@ -24,7 +24,7 @@ role :app, host
 set :env, :production
 
 # Where will it be located on a server?
-set :deploy_to, "/apps/sinatra/#{application}"
+set :deploy_to, "/apps/sinatra/perfume/#{application}"
 set :unicorn_conf, "#{deploy_to}/shared/unicorn.rb"
 set :unicorn_pid, "#{deploy_to}/shared/tmp/pids/unicorn.pid"
 
