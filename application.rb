@@ -29,6 +29,10 @@ class Application < Sinatra::Base
     haml :index
   end
 
+  get '/policy' do
+    haml :policy
+  end
+
   post '/orders.json' do
 
     phones = %w(79037928959)
