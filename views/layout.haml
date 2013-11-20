@@ -1,0 +1,10 @@
+%html
+  %head
+    = css :application
+    = js :application
+    %title
+      Оригинальная парфюмерия Montale
+  %body
+    = yield
+    = haml :modal
+    -#= erb :metrika
