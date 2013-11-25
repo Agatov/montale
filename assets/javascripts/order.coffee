@@ -33,7 +33,7 @@ $ ->
       hide_thank_you()
 
     reachGoal 'new-order'
-#    reachGoal $(@).attr('goal')
+    reachGoal $(@).attr('goal')
 
     show_thank_you_with_overlay()
 
