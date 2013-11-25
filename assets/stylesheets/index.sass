@@ -17,7 +17,6 @@ body
   margin: 0px
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif
   background: #fff
-  padding-bottom: 20px
 
 
 h1
@@ -73,6 +72,10 @@ p
   margin: 0px auto
   @include linear-gradient(top, #f7f7f5, #e5e5e3)
 
+  &.orange
+    @include linear-gradient(top, #f69656, #ec6d46)
+    color: #fff
+
   .call-to-action
     font-size: 20px
     text-align: center
@@ -102,21 +105,21 @@ p
         @include linear-gradient(top, #332d26, #746757)
 
 
+.bracket
+  width: 960px
+  height: 60px
+  margin-top: 20px
+  background: url('/images/bracket.png')
+
+.title
+  text-align: center
+  font-size: 36px
+  font-weight: 200
+  padding-bottom: 50px
+
 
 .schema
   margin: 50px auto
-
-  .title
-    text-align: center
-    font-size: 36px
-    font-weight: 200
-
-  .bracket
-    width: 960px
-    height: 60px
-    margin-top: 20px
-    background: url('/images/bracket.png')
-
 
   .schema-row
     padding: 30px 0
@@ -164,7 +167,6 @@ p
           left: 45px
           border-width: 10px 10px 0px 10px
           border-style: solid
-          //border-color: red transparent
 
         &.gray
           @include linear-gradient(top, #f7f7f5, #e5e5e3)
@@ -231,25 +233,33 @@ p
 
 
 .attention
+  position: relative
   width: 960px
-  height: 135px
+  padding: 15px 0
   margin: 0px auto
   @include linear-gradient(top, #f69656, #ec6d46)
   font-size: 30px
   font-weight: 200
   line-height: 1.5
-  padding-top: 40px
   text-align: center
   color: #fff
+
+  &:after
+    content: ""
+    position: absolute
+    bottom: -20px
+    left: 470px
+    border-width: 20px 20px 0px 20px
+    border-style: solid
+    border-color: #ec6d46 transparent
 
   strong
     font-weight: bold
 
 
-
-
 .triggers
-  padding: 100px 0
+  margin: 50px 0
+  padding: 25px 0
 
   &:after
     clear: both
@@ -280,4 +290,105 @@ p
 
   a
     color: #262626
+
+
+.action
+  padding: 50px 0
+  width: 720px
+  margin: 0px auto
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
+  .bottle
+    float: left
+    width: 110px
+    height: 130px
+
+    .cost
+      height: 30px
+      line-height: 1.4
+      font-size: 14px
+      text-align: center
+
+      .red
+        text-decoration: line-through
+        color: red
+
+
+  .sign
+    float: left
+    padding: 50px 25px
+
+
+.action-desc
+  margin-top: 50px
+  font-size: 20px
+  color: #262626
+  text-align: center
+
+
+.timer
+  width: 500px
+  margin: 0px auto
+  padding: 50px 0
+
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+  .timer-title
+    float: left
+    width: 170px
+    height: 50px
+    background: #fff
+    color: #ed7248
+    text-align: right
+    line-height: 1.4
+    font-size: 20px
+    font-weight: bold
+    padding-right: 40px
+
+  .timer-timer
+    float: left
+
+    .num
+      float: left
+      text-align: center
+      font-size: 36px
+      font-weight: bold
+      padding: 5px
+      color: #262626
+
+      .sign
+        font-size: 10px
+        font-weight: normal
+        color: #b3b3b3
+
+      span
+        padding: 0px
+        margin: 0px
+        width: 3px
+
+
+    .colon
+      float: left
+      text-align: center
+      font-size: 30px
+      height: 30px
+      line-height: 45px
+      font-weight: bold
+      color: #b3b3b3
+
+
+
 

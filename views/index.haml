@@ -1,20 +1,14 @@
-.header
-  .wrapper
-    %img.logo{src: '/images/logo.png'}
-    .phone 8 (495) 792 89 59
-
-  .phone
+= haml :header
 .intro
   .description
     Продажа оригинальной парфюмерии Montale со склада в Москве
 
 = haml :form
 = haml :schema
-.attention
-  %strong
-    Осторожно!
-  Если вы видите цену ниже 4 000 рублей за 100 ml флакон Montale, знайте - это подделка!
+= haml :action
 .triggers
+  .title
+    Почему нас рекомендуют своим друзьям
   .wrapper
     .trigger
       %img{src: '/images/icon_original.png'}
@@ -29,13 +23,14 @@
     .trigger
       %img{src: '/images/icon_special.png'}
       .text
-        Уникальное предложение
+        Бесплатная доставка
 
     .trigger
       %img{src: '/images/icon_delivery.png'}
       .text
         Доставка на следующий день
-= haml :form
 
-.policy
+= haml :header
+
+-#.policy
   %a{href: '/policy', target: '_blank'} Политика конфеденциальности

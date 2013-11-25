@@ -1,0 +1,61 @@
+.attention
+  %strong
+    Акция!
+  Получите скидку 700 рублей
+
+.action
+  .bottle
+    %img{src: '/images/action_bottle_1.png'}
+    .cost
+      4 400 рублей
+  %img.sign{src: '/images/big_plus.png'}
+  .bottle
+    %img{src: '/images/action_bottle_2.png'}
+    .cost
+      .red
+        4 400 рублей
+      3 700 рублей
+  %img.sign{src: '/images/big_equal_sign.png'}
+  %img{src: '/images/action_gift.png'}
+
+
+.action-desc
+  При покупке любого аромата Montale, вы получаете 700 руб. скидки на второй флакон
+  .wrapper
+    .bracket
+
+
+.timer
+  .timer-title
+    До конца акции осталось:
+
+  .timer-timer
+    .num
+      2
+      .sign
+        дня
+    .colon :
+    .num
+      %span#hours
+      -#%span#hours-first
+      -#%spah#hours-last
+      .sign
+        часа
+    .colon :
+    .num
+      %span#minutes
+      -#%span#minutes-first
+      -#%spah#minutes-last
+      .sign
+        мин
+    .colon :
+    .num
+      %span#seconds
+      -#%span#seconds-first
+      -#%spah#seconds-last
+      .sign
+        сек
+
+
+= haml :orange_form
+
