@@ -106,4 +106,4 @@ window.hide_thank_you = ->
 
 
 window.reachGoal = (goal) ->
-  yaCounter23083819.reachGoal goal
+  yaCounter25514660.reachGoal goal
